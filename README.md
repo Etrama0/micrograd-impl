@@ -22,10 +22,18 @@ Micrograd is a simple autograd engine and neural network implementation, inspire
 ---
 
 ## Installation
+
+### Recommended: Use Jupyter Notebook for Experimentation
+To interactively experiment with Micrograd, open the Jupyter Notebook provided in the notebooks/ directory:
+```
+notebooks/micrograd.ipynb
+```
+This is useful for understanding how the autograd engine works and for testing different architectures.
+
 ### 1️⃣ Clone the Repository
 ```bash
-git clone <your-repo-url>
-cd micrograd_project
+git clone https://github.com/Etrama0/micrograd-impl
+cd micrograd-impl
 ```
 ### 2️⃣ Create Virtual Environment
 ```bash
@@ -74,12 +82,12 @@ micrograd_project/
 ```bash
 python train.py
 ```
-This will:
-✅ Train a **Multi-Layer Perceptron (MLP)**
-✅ Print **loss values** over epochs
-✅ Show a **loss curve** using `matplotlib`
-✅ Render a **computation graph** using `graphviz`
-✅ Print **final predictions**
+This will:  
+✅ Train a **Multi-Layer Perceptron (MLP)**  
+✅ Print **loss values** over epochs  
+✅ Show a **loss curve** using `matplotlib`  
+✅ Render a **computation graph** using `graphviz`  
+✅ Print **final predictions**  
 
 ### 2️⃣ Visualize Computation Graph
 If you want to visualize the computation graph separately, ensure **Graphviz** is installed and run:
@@ -107,6 +115,7 @@ After training, the **computation graph** will be rendered and opened automatica
 - Add more activation functions (ReLU, Sigmoid, etc.)
 - Implement batch training
 - Extend to support PyTorch-like API
+- Experiment with different optimizers (Adam, RMSProp)
 
 ---
 
